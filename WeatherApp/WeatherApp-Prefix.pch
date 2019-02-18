@@ -1,0 +1,24 @@
+//
+//  WeatherApp-Prefix.pch
+//  WeatherApp
+//
+//  Created by Dimitar Spasovski on 2/17/19.
+//  Copyright © 2019 Dimitar Spasovski. All rights reserved.
+//
+
+#ifndef WeatherApp_Prefix_pch
+#define WeatherApp_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "ServerInvoker.h"
+#import "UIViewController+Alerts.h"
+#import  "SVProgressHUD.h"
+#import "TSMessage.h"
+#import "TSMessageView.h"
+
+#define DLog(Enter_log_text, ...) NSLog(@"<%@:%d> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,  [NSString stringWithFormat:(Enter_log_text), ##__VA_ARGS__])
+
+#endif /* WeatherApp_Prefix_pch */
